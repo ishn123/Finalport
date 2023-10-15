@@ -1,7 +1,7 @@
 import Searchcontainer from "./Searchcontainer";
 import { Suspense, useEffect, useState } from "react";
 import WorkCards from "./WorkCards";
-
+import {useSwipeable} from "react-swipeable"
 import "./Cards.css"
 import LazySpinnerLoader from "../LazyComponents/LazySpinnerLoader";
 
@@ -106,13 +106,23 @@ function SearchCards({ chunckSize }) {
     addPagination(pagesBtn);
     pagesBtn[0].classList.add("active");
   }, [data]);
-  
+  const handlers = useSwipeable({
+    onSwipedLeft: (eventData) => {      if(currPage != Math.ceil(size/ chunckSize)-1)navigateNext(currPage+1);},
+     onSwipedRight: (eventData) => {   if(currPage!=0)navigateNext(currPage-1);},
+    delta: 10,                             // min distance(px) before a swipe starts. *See Notes*
+    preventScrollOnSwipe: true,           // prevents scroll during swipe (*See Details*)
+    trackTouch: true,                      // track touch input
+    trackMouse: false,                     // track mouse input
+    rotationAngle: 0,                      // set a rotation angle
+    swipeDuration: Infinity,               // allowable duration of a swipe (ms). *See Notes*
+    touchEventOptions: { passive: true },
+  });
   return (
     <div className="App-header">
       <Searchcontainer chunckSize={chunckSize} idx={currPage} setPage={setPage} setData={setData}></Searchcontainer>
       <div className="projects-card-container">
         <div className="skill-card-show">
-          <div class="container">
+          <div class="container" {...handlers}>
             {
               currData?.length != 0 ?
                 (
