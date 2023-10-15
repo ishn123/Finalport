@@ -8,7 +8,7 @@ function WorkCards({title,para,imageurl,cardText,backcolor,tags,desc,previewlink
   const navigate = useNavigate();
   const imArr = imageurl?.asset?._ref.split("-");
 
-  const queryParams = {Title:title,para:para,url:imageurl,shortdesc:cardText,desc:desc,sourcecodelink,previewlink}
+  const queryParams = {Title:title,para:para,url:baseURI+imArr[1]+'-'+imArr[2]+"."+imArr.slice(-1),shortdesc:cardText,desc:desc,sourcecodelink,previewlink}
   const navigateHandler = (path) => {
     
     navigate(path);
