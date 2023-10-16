@@ -9,7 +9,7 @@ import SideBar from '../components/Footer';
 import { scrollAnimation } from '../components/Navbar';
 import { gsap } from 'gsap';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import { faYoutube, faGithub, faXTwitter, faLinkedinIn } from "@fortawesome/free-brands-svg-icons"
+import { faInstagram, faGithub, faXTwitter, faLinkedinIn } from "@fortawesome/free-brands-svg-icons"
 import IshanResume from "../Ishan.pdf";
 import SanyamResume from "../sanyam_main_resume.pdf";
 import emailjs from "@emailjs/browser";
@@ -53,19 +53,22 @@ function MobileConnect() {
   const sendEmail = (event) => {
 
     event.preventDefault();
-
-
-
-    const serviceID = 'service_p4gz26b';
-    const templateID = 'template_108xj5u';
-    
-    emailjs.sendForm(serviceID, templateID, emailBtn.current, "f3nSYP6GeF8JLWMil")
+    // const serviceID = 'service_p4gz26b';
+    const serviceID = 'service_spc9wbe';
+    // const templateID = 'template_108xj5u';
+    const templateID = 'template_zg2hxd6';
+    emailjs.sendForm(serviceID, templateID, emailBtn.current, "d2ZbDdoK0bvWPhzlA")
       .then(() => {
         setOnSuccess("Sent");
         setemail("");
         setmessage("");
       }, (err) => {
         setOnSuccess("Failed!")
+      });
+      emailjs.sendForm(serviceID,"template_meljxc9", emailBtn.current, "d2ZbDdoK0bvWPhzlA")
+      .then(() => {
+        console.log("done")
+      }, (err) => {
       });
   }
 
@@ -377,7 +380,7 @@ function MobileConnect() {
 
 
           <div className="cont" data-scroll data-scroll-sticky data-scroll-target="#main">
-            <div className="work mobn kkkkop">CONTACT
+            <div className="work mobn kkkkop">CONNECT
             </div>
           </div>
           <div className="connect-container">
@@ -388,16 +391,16 @@ function MobileConnect() {
             </div>
             <div className="connect-options">
               <div className="connect-option-list">
-                <FontAwesomeIcon icon={faYoutube} size='2x' style={{ color: 'white', opacity: "0.7" }} href='https://www.youtube.com/@_codingBeaverX_/'/>
+                <FontAwesomeIcon icon={faInstagram} size='2x' style={{ color: 'white', opacity: "0.7" }}  onClick={()=>window.location.href='https://www.instagram.com/sanyamsharma_17/'} />
               </div>
               <div className="connect-option-list">
-                <FontAwesomeIcon icon={faGithub} size='2x' style={{ color: 'white', opacity: "0.7" }} href='https://github.com/ishn123'/>
+                <FontAwesomeIcon icon={faGithub} size='2x' style={{ color: 'white', opacity: "0.7" }}  onClick={()=>window.location.href='https://github.com/Sanyam17-beep'} />
               </div>
               <div className="connect-option-list">
-                <FontAwesomeIcon icon={faXTwitter} size='2x' style={{ color: 'white', opacity: "0.7" }} href='https://twitter.com/_WebBeaverX_'/>
+                <FontAwesomeIcon icon={faXTwitter} size='2x' style={{ color: 'white', opacity: "0.7" }} onClick={()=>window.location.href='https://twitter.com/_WebBeaverX_'} />
               </div>
               <div className="connect-option-list">
-                <FontAwesomeIcon icon={faLinkedinIn} size='2x' style={{ color: 'white', opacity: "0.7" }} href='https://www.linkedin.com/in/ishan-arora-2000/'/>
+                <FontAwesomeIcon icon={faLinkedinIn} size='2x' style={{ color: 'white', opacity: "0.7" }}  onClick={()=>window.location.href='https://www.linkedin.com/in/sanyam-sharma-4919b9205/'} />
               </div>
             </div>
 
@@ -410,6 +413,8 @@ function MobileConnect() {
                 <textarea rows={10} cols={150} wrap='soft' value={message} onChange={(e) => {
                   setmessage(e.target.value)
                 }}
+                id='message'
+                name='message'
                   style={{ resize: "none" }}
                   className='text-area-message' placeholder={"Message"}>
                 </textarea>
