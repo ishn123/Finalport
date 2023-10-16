@@ -11,7 +11,7 @@ function Searchcontainer({ chunckSize, idx, setPage }) {
   const dispatch = useDispatch();
   const [searchTitle, setSearchTitle] = useState("");
   const [isActive, setActive] = useState("false");
-  const displayTags = ["Html", "Css", "MERN", "Python", "NodeJS", "Responsive", "VITE"];
+  const displayTags = ["Html", "Css", "MERN", "React", "NodeJS", "Responsive", "VITE","Javascript","GSAP","Next"];
   const [tags, setTags] = useState([]);
 
   const searchProject = () => {

@@ -17,7 +17,7 @@ function Footer({dateState}) {
             </div>
         </div>
         <div id="footerright">
-            <a href="https://github.com/ishn123">GitHub</a><a href="https://www.instagram.com/ishn__/">instagram</a><a href="https://www.linkedin.com/in/ishan-arora-2000/">linkedin</a><a href="https://twitter.com/_WebBeaverX_">twitter</a>
+            <a href="https://github.com/sanyam17-beep">GitHub</a><a href="https://www.instagram.com/sanyamsharma_17/">Instagram</a><a href="https://www.linkedin.com/in/sanyam-sharma-4919b9205/">Linkedin</a><a href="https://twitter.com/_WebBeaverX_">Twitter</a>
         </div>
     </div>
   )
