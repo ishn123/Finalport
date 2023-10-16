@@ -154,18 +154,19 @@ function Skills() {
         }
       })
     }, {
-      // threshold:0.1,
-      // root:document.getElementsByClassName(".xl-container")[0]
+      threshold:0.1,
+      root:document.getElementsByClassName(".xl-container")[0]
     });
-    const hiddenEle = document.querySelectorAll(".hidden");
-    hiddenEle.forEach((ele) => observe.observe(ele));
-    const animatedText = document.querySelectorAll('.text-animate');
-    animatedText.forEach((ele) => observe.observe(ele));
-    const stickerAnimate = document.querySelector(".build-in-scale-down");
-    observe.observe(stickerAnimate);
-    const deployment = document.querySelector(".deployment-sticker");
-    observe.observe(deployment);
+      const hiddenEle = document.querySelectorAll(".hidden");
+      hiddenEle.forEach((ele) => observe.observe(ele));
+      const animatedText = document.querySelectorAll('.text-animate');
+      animatedText.forEach((ele) => observe.observe(ele));
+      const stickerAnimate = document.querySelector(".build-in-scale-down");
+      observe.observe(stickerAnimate);
+      const deployment = document.querySelector(".deployment-sticker");
+      observe.observe(deployment);
 
+   
     // const animatedText = document.querySelectorAll(".build-in-slideX-left");
     // animatedText.forEach((ele)=>textObserver.observe(ele));
     return () => {
