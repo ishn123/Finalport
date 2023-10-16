@@ -177,8 +177,15 @@ function Projects() {
     });
 
 
-    setLoco(locoScroll);
-    locoScroll.on("scroll", ScrollTrigger.update);
+    // setLoco(locoScroll);
+    locoScroll.on("scroll", ()=>{
+      try{
+        ScrollTrigger.update();
+        console.log("Trigger updated");
+      }catch{
+        console.log("Unable to update scroll trigger");
+      }
+    });
     
     ScrollTrigger.scrollerProxy("#main", {
       scrollTop(value) {
@@ -190,8 +197,15 @@ function Projects() {
       pinType: document.querySelector("#main").style.transform ? "transform" : "fixed"
     });
     try {
-      ScrollTrigger.addEventListener('refresh', () => locoScroll.update());
-      ScrollTrigger.refresh();
+      ScrollTrigger.addEventListener('refresh', () => {
+        try{
+          locoScroll.update();
+          console.log("updated");
+        }catch{
+          console.log("Can't updated");
+        }
+      });
+      //ScrollTrigger.refresh();
     }
     catch (e) {
 
@@ -207,8 +221,9 @@ function Projects() {
 
 
     return () => {
+      
       locoScroll.destroy();
-
+      ScrollTrigger.killAll();
     };
   }, []);
   useEffect(() => {
@@ -275,8 +290,8 @@ function Projects() {
     if(window.innerWidth>600){
       let dabba = document.getElementsByClassName("dabba-wrapper")[0];
       dabba.classList.add("animate");
-      
-      
+
+    
         addHorizontalScrollAnimation();
       
       

@@ -14,7 +14,7 @@ import "./product.css";
 import IshanResume from "../Ishan.pdf";
 import SanyamResume from "../sanyam_main_resume.pdf";
 import Sphere from "../Sphere.mp4";
-import { useSelector } from 'react-redux';
+
 gsap.registerPlugin(ScrollTrigger);
 
 function Product() {
@@ -105,7 +105,14 @@ function Product() {
     setLoco(locoScroll);
     
     try {
-      locoScroll.on("scroll", ScrollTrigger.update);
+      locoScroll.on("scroll", ()=>{
+        try{
+          ScrollTrigger.update();
+          console.log("Trigger updated");
+        }catch{
+          console.log("Unable to update scroll trigger");
+        }
+      });
       try{
       ScrollTrigger.scrollerProxy("#main", {
         scrollTop(value) {
@@ -124,8 +131,14 @@ function Product() {
 
     }
     try {
-      ScrollTrigger.addEventListener('refresh', () => locoScroll.update());
-      ScrollTrigger.refresh();
+      ScrollTrigger.addEventListener('refresh', () => {
+        try{
+          locoScroll.update();
+          console.log("updated");
+        }catch{
+          console.log("Can't updated");
+        }
+      });
     }
     catch (e) {
 
