@@ -4,7 +4,7 @@ import { createAction, createAsyncThunk, createSlice } from "@reduxjs/toolkit";
 
 export const countData = createAsyncThunk("preloader/countData",    
     async (_,thunkAPI)=>{
-        console.log(_);
+       
         const data = await fetch(`https://mk7d8ghl.api.sanity.io/v2023-10-14/data/query/production?query=${_}`)
                             .then(res=>res.json());
         return data;
@@ -28,7 +28,7 @@ export const filterByTags = createAsyncThunk("preloader/filterTags",
         const data = await fetch(`https://mk7d8ghl.api.sanity.io/v2023-10-14/data/query/production?query=${_.nquery}`)
                             .then((res)=>res.json());
 
-        console.log(data);
+        
         return data;
     }
 )

@@ -181,9 +181,9 @@ function Projects() {
     locoScroll.on("scroll", ()=>{
       try{
         ScrollTrigger.update();
-        console.log("Trigger updated");
+        
       }catch{
-        console.log("Unable to update scroll trigger");
+       
       }
     });
     
@@ -200,9 +200,9 @@ function Projects() {
       ScrollTrigger.addEventListener('refresh', () => {
         try{
           locoScroll.update();
-          console.log("updated");
+          
         }catch{
-          console.log("Can't updated");
+          
         }
       });
       //ScrollTrigger.refresh();

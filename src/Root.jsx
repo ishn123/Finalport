@@ -23,7 +23,7 @@ function Root({store:store}) {
   const dispatch = useDispatch();
   const storeLoader = useSelector((state)=>state.preloader.loading);
   let chunkSize = 4;
-  console.log(chunkSize);
+ 
   const location = useLocation();
   const [dateState, setDateState] = useState(new Date());
   const [loading, setLoading] = useState(true);

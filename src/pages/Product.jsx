@@ -106,9 +106,9 @@ function Product() {
       locoScroll.on("scroll", () => {
         try {
           ScrollTrigger.update();
-          console.log("Trigger updated");
+        
         } catch {
-          console.log("Unable to update scroll trigger");
+          
         }
       });
       try {
