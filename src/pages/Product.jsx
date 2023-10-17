@@ -10,9 +10,7 @@ import { scrollAnimation } from '../components/Navbar';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/all';
 import "./product.css";
-
 import IshanResume from "../Ishan.pdf";
-import SanyamResume from "../sanyam_main_resume.pdf";
 import Sphere from "../Sphere.mp4";
 
 gsap.registerPlugin(ScrollTrigger);
@@ -47,7 +45,7 @@ function Product() {
   const [loco, setLoco] = useState(null);
 
   const data = new URLSearchParams(window.location.search);
-  
+
 
   const attachScrollEvent = (locoScroll) => {
     try {
@@ -91,7 +89,7 @@ function Product() {
     };
   }, [mobileMenu]);
   useEffect(() => {
-    
+
     const locoScroll = new LocomotiveScroll({
       el: document.querySelector('#main'),
       smooth: true,
@@ -103,40 +101,39 @@ function Product() {
       }
     });
     setLoco(locoScroll);
-    
+
     try {
-      locoScroll.on("scroll", ()=>{
-        try{
+      locoScroll.on("scroll", () => {
+        try {
           ScrollTrigger.update();
           console.log("Trigger updated");
-        }catch{
+        } catch {
           console.log("Unable to update scroll trigger");
         }
       });
-      try{
-      ScrollTrigger.scrollerProxy("#main", {
-        scrollTop(value) {
-          return arguments.length ? locoScroll.scrollTo(value, 0, 0) : locoScroll.scroll.instance.scroll.y;
-        },
-        getBoundingClientRect() {
-          return { top: 0, left: 0, width: window.innerWidth, height: window.innerHeight };
-        },
-        
-        pinType: document.querySelector("#main").style.transform ? "transform" : "fixed"
-      });
-    }catch{
-      
-    }
+      try {
+        ScrollTrigger.scrollerProxy("#main", {
+          scrollTop(value) {
+            return arguments.length ? locoScroll.scrollTo(value, 0, 0) : locoScroll.scroll.instance.scroll.y;
+          },
+          getBoundingClientRect() {
+            return { top: 0, left: 0, width: window.innerWidth, height: window.innerHeight };
+          },
+
+          pinType: document.querySelector("#main").style.transform ? "transform" : "fixed"
+        });
+      } catch {
+
+      }
     } catch {
 
     }
     try {
       ScrollTrigger.addEventListener('refresh', () => {
-        try{
+        try {
           locoScroll.update();
-          console.log("updated");
-        }catch{
-          console.log("Can't updated");
+        } catch {
+
         }
       });
     }
@@ -196,8 +193,8 @@ function Product() {
         });
       }
     });
-    setTimeout(()=>{addScaleAnimation();},1200)
-    
+    addScaleAnimation();
+
   }, []);
   useEffect(() => {
     try {
@@ -232,8 +229,14 @@ function Product() {
       <Transition>
       </Transition>
       <div className="Skills-Page">
-      <div id="side" > <IoChatbubbleEllipses id='ico' onClick={() => showConnectBox()}></IoChatbubbleEllipses>
-          <div id="resume"> <a href={SanyamResume} target="_blank" style={{textDecoration:"none",color:"black"}}>Resume</a></div>
+        <div id="side" onClick={() => showConnectBox()}> <IoChatbubbleEllipses id='ico' ></IoChatbubbleEllipses>
+          <div className="side-lancer-1" onClick={(event) => event.stopPropagation()}>
+            <a href={IshanResume} target="_blank">I</a>
+          </div>
+          {/* <div className="side-lancer-2" onClick={(event)=>event.stopPropagation()}>
+                <a href={SanyamResume} target="_blank">S</a>
+              </div> */}
+          <div id="resume" onClick={(event) => showResumeAnimation(event)}>Resume</div>
         </div>
         <div id="minicircle"></div>
         <div id="main" data-scroll-container data-scroll-speed="2">
@@ -259,8 +262,8 @@ function Product() {
                 <div className="description-content">{data?.get("desc")}</div>
               </div>
               <div className="description-buttons">
-                <button className="project-live-button" onClick={()=>window.location.href = data?.get("previewlink")}>Preview</button>
-                <button className="project-source-button" onClick={()=>window.location.href = data?.get("sourcecodelink")}>Source</button>
+                <button className="project-live-button" onClick={() => window.location.href = data?.get("previewlink")}>Preview</button>
+                <button className="project-source-button" onClick={() => window.location.href = data?.get("sourcecodelink")}>Source</button>
                 <div className="Button-note">
                   <h2>(NOTE)</h2>
                   <div className="Note-content">I'm excited to work with you <span onClick={() => showConnectBox()}>Connect with me!</span> While my source code is limited to demos, I'm ready to create even greater solutions for you.</div>

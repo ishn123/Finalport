@@ -223,7 +223,7 @@ function Projects() {
     return () => {
       
       locoScroll.destroy();
-      ScrollTrigger.killAll();
+      
     };
   }, []);
   useEffect(() => {

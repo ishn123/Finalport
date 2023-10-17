@@ -9,7 +9,7 @@ import SideBar from '../components/Footer';
 import { scrollAnimation } from '../components/Navbar';
 import { gsap } from 'gsap';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import { faInstagram, faGithub, faXTwitter, faLinkedinIn } from "@fortawesome/free-brands-svg-icons"
+import { faGithub, faXTwitter, faLinkedinIn, faYoutube } from "@fortawesome/free-brands-svg-icons"
 import IshanResume from "../Ishan.pdf";
 import SanyamResume from "../sanyam_main_resume.pdf";
 import emailjs from "@emailjs/browser";
@@ -48,16 +48,16 @@ function MobileConnect() {
   const [loco, setLoco] = useState(null);
   const emailBtn = useRef();
   const [onSuccess, setOnSuccess] = useState("");
-  
+
 
   const sendEmail = (event) => {
 
     event.preventDefault();
-    // const serviceID = 'service_p4gz26b';
-    const serviceID = 'service_spc9wbe';
-    // const templateID = 'template_108xj5u';
-    const templateID = 'template_zg2hxd6';
-    emailjs.sendForm(serviceID, templateID, emailBtn.current, "d2ZbDdoK0bvWPhzlA")
+    const serviceID = 'service_p4gz26b';
+    // const serviceID = 'service_spc9wbe';
+    const templateID = 'template_108xj5u';
+    // const templateID = 'template_zg2hxd6';
+    emailjs.sendForm(serviceID, templateID, emailBtn.current, "f3nSYP6GeF8JLWMil")
       .then(() => {
         setOnSuccess("Sent");
         setemail("");
@@ -65,7 +65,7 @@ function MobileConnect() {
       }, (err) => {
         setOnSuccess("Failed!")
       });
-      emailjs.sendForm(serviceID,"template_meljxc9", emailBtn.current, "d2ZbDdoK0bvWPhzlA")
+    emailjs.sendForm(serviceID, "template_4gkennh", emailBtn.current, "f3nSYP6GeF8JLWMil")
       .then(() => {
         console.log("done")
       }, (err) => {
@@ -370,8 +370,8 @@ function MobileConnect() {
       <Transition>
       </Transition>
       <div className="Skills-Page">
-      <div id="side" > <IoChatbubbleEllipses id='ico' onClick={() => showConnectBox()}></IoChatbubbleEllipses>
-          <div id="resume"> <a href={SanyamResume} target="_blank" style={{textDecoration:"none",color:"black"}}>Resume</a></div>
+        <div id="side" > <IoChatbubbleEllipses id='ico' onClick={() => showConnectBox()}></IoChatbubbleEllipses>
+          <div id="resume"> <a href={SanyamResume} target="_blank" style={{ textDecoration: "none", color: "black" }}>Resume</a></div>
         </div>
         <div id="minicircle"></div>
         <div id="main" data-scroll-container data-scroll-speed="2" >
@@ -384,27 +384,27 @@ function MobileConnect() {
             </div>
           </div>
           <div className="connect-container">
-          <div className="threeD-container">
-            <Suspense fallback={<LazySpinnerLoader></LazySpinnerLoader>}>
-              <V2></V2>
-            </Suspense>
+            <div className="threeD-container">
+              <Suspense fallback={<LazySpinnerLoader></LazySpinnerLoader>}>
+                <V2></V2>
+              </Suspense>
             </div>
             <div className="connect-options">
               <div className="connect-option-list">
-                <FontAwesomeIcon icon={faInstagram} size='2x' style={{ color: 'white', opacity: "0.7" }}  onClick={()=>window.location.href='https://www.instagram.com/sanyamsharma_17/'} />
+                <FontAwesomeIcon icon={faYoutube} size='2x' style={{ color: 'white', opacity: "0.7" }} onClick={() => window.location.href = 'https://www.youtube.com/@_codingBeaverX_'} />
               </div>
               <div className="connect-option-list">
-                <FontAwesomeIcon icon={faGithub} size='2x' style={{ color: 'white', opacity: "0.7" }}  onClick={()=>window.location.href='https://github.com/Sanyam17-beep'} />
+                <FontAwesomeIcon icon={faGithub} size='2x' style={{ color: 'white', opacity: "0.7" }} onClick={() => window.location.href = 'https://github.com/ishn123'} />
               </div>
               <div className="connect-option-list">
-                <FontAwesomeIcon icon={faXTwitter} size='2x' style={{ color: 'white', opacity: "0.7" }} onClick={()=>window.location.href='https://twitter.com/_WebBeaverX_'} />
+                <FontAwesomeIcon icon={faXTwitter} size='2x' style={{ color: 'white', opacity: "0.7" }} onClick={() => window.location.href = 'https://twitter.com/_WebBeaverX_'} />
               </div>
               <div className="connect-option-list">
-                <FontAwesomeIcon icon={faLinkedinIn} size='2x' style={{ color: 'white', opacity: "0.7" }}  onClick={()=>window.location.href='https://www.linkedin.com/in/sanyam-sharma-4919b9205/'} />
+                <FontAwesomeIcon icon={faLinkedinIn} size='2x' style={{ color: 'white', opacity: "0.7" }} onClick={() => window.location.href = 'https://www.linkedin.com/in/ishan-arora-2000/'} />
               </div>
             </div>
 
-            <form className="write-message" onSubmit={(event)=>sendEmail(event)} ref={emailBtn}>
+            <form className="write-message" onSubmit={(event) => sendEmail(event)} ref={emailBtn}>
 
               <div className="input-custom-message-area">
                 <input type="email" name="to_email" id="to_email" className='text-area-message' value={email} onChange={(e) => {
@@ -413,8 +413,8 @@ function MobileConnect() {
                 <textarea rows={10} cols={150} wrap='soft' value={message} onChange={(e) => {
                   setmessage(e.target.value)
                 }}
-                id='message'
-                name='message'
+                  id='message'
+                  name='message'
                   style={{ resize: "none" }}
                   className='text-area-message' placeholder={"Message"}>
                 </textarea>
@@ -434,7 +434,7 @@ function MobileConnect() {
             <div className="separation-line"></div>
             <div className="subscribe-content">
               <div className="button-subscribe-connect">
-                <a class="bmc-button" target="_blank" href="https://www.buymeacoffee.com/sanyamsharma">
+                <a class="bmc-button" target="_blank" href="https://www.buymeacoffee.com/aroraishan">
                   <img src="https://www.buymeacoffee.com/assets/img/BMC-btn-logo.svg" alt="Buy me a coffee" />
                   <span style={{ marginLeft: 5 }}>Buy me a coffee</span>
                 </a>

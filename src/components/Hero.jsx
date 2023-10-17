@@ -3,7 +3,7 @@ import React, { useEffect, useState, useRef } from "react";
 import gsap from "gsap";
 import { IoArrowDownSharp, IoChatbubbleEllipses } from "react-icons/io5";
 import { FiArrowUpRight } from "react-icons/fi";
-import loh from '../loh.jpeg';
+// import loh from '../loh.jpeg';
 import Ny from "../gsmy.jpeg";
 import HeroBanner from './HeroBanner';
 import Clients from './Clients';
@@ -149,7 +149,7 @@ function Hero() {
         </div>
 
       </div>
-      <About src2={loh}></About>
+      <About src2={Ny}></About>
     </div>
   )
 }

@@ -27,7 +27,7 @@
     z-index: 10000;
 }
 .tex::before {
-    content:"Sanyam";
+    content:"Ishan";
     position: absolute;
     left: 0;
     top: 0;
