@@ -226,7 +226,7 @@ function Experience() {
       </Transition>
       <div className="Skills-Page">
         <div id="side" > <IoChatbubbleEllipses id='ico' onClick={() => showConnectBox()}></IoChatbubbleEllipses>
-          <div id="resume"> <a href={SanyamResume} target="_blank" style={{textDecoration:"none",color:"black"}}>Resume</a></div>
+          <div id="resume"> <a href={IshanResume} target="_blank" style={{textDecoration:"none",color:"black"}}>Resume</a></div>
         </div>
         <div id="minicircle"></div>
         <div id="main" data-scroll-container data-scroll-speed="2">
