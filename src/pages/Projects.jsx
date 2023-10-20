@@ -177,7 +177,7 @@ function Projects() {
     });
 
 
-    // setLoco(locoScroll);
+    setLoco(locoScroll);
     locoScroll.on("scroll", ()=>{
       try{
         ScrollTrigger.update();
