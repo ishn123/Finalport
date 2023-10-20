@@ -40,7 +40,9 @@ export const fetchDataStrapi = createAsyncThunk("preloader/getData",
         
         let data = await fetch(`https://mk7d8ghl.api.sanity.io/v2023-10-14/data/query/production?query=*[_type=='Projects']{previewlink,Description,Title,sourcecodelink,Tags,buttoncolor,imageUrl,shortdesc,para}`)
                         .then(res=>res.json());
-
+        
+        
+                        console.log(data);
         return data;
     }
 )

@@ -89,7 +89,7 @@ function Searchcontainer({ chunckSize, idx, setPage }) {
     setTags(nextTags);
   }
   const addTags = (tag) => {
-    if (!tags.includes(tag)) {
+    if (!tags.includes(tag.toLowerCase())) {
       let query = "";
       let j = 0;
       for (let i of tags) {
