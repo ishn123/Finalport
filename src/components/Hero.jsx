@@ -111,14 +111,14 @@ function Hero() {
     <div>
       <div id="hero">
         <HeroBanner></HeroBanner>
-        <div id="chhotiheadings">
+        {/* <div id="chhotiheadings">
           <div class="bounding">
             <h5 class="boundingelem moi">available for freelance</h5>
           </div>
           <div class="bounding">
             <h5 class="boundingelem moi oo">work for web</h5>
           </div>
-        </div>
+        </div> */}
         <Clients></Clients>
         <div id="herofooter">
           <a className='js-work-link op' onClick={()=>navigateHandler('/skills')}>Working on Web <FiArrowUpRight className='arr'></FiArrowUpRight><span className='underline'></span></a>
