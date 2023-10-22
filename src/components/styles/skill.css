@@ -392,6 +392,7 @@ h3{
     }
     .keerti{
         color: white;
+       
     }
     .type-of-skill-name{
         display: flex;
@@ -454,8 +455,8 @@ h3{
 }
 
 #devops{
-background-color: #fff;
-    mask: url("../../../assets/dev-ops-solid-svgrepo-com.png") center/contain;
+/* background-color: #fff; */
+    mask: url("../../assets/dev-ops-solid-svgrepo-com.png") center;
     height: 80px;
     width: 80px;
     opacity: 1;
