@@ -264,10 +264,10 @@ function Product() {
               <div className="description-buttons">
                 <button className="project-live-button" onClick={() => window.location.href = data?.get("previewlink")}>Preview</button>
                 <button className="project-source-button" onClick={() => window.location.href = data?.get("sourcecodelink")}>Source</button>
-                <div className="Button-note">
+                {/* <div className="Button-note">
                   <h2>(NOTE)</h2>
                   <div className="Note-content">I'm excited to work with you <span onClick={() => showConnectBox()}>Connect with me!</span> While my source code is limited to demos, I'm ready to create even greater solutions for you.</div>
-                </div>
+                </div> */}
               </div>
             </div>
             <div className="sphere-video">
