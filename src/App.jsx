@@ -8,7 +8,7 @@ import Navbar, { scrollAnimation } from './components/Navbar';
 import Footer from './components/Footer';
 import Transition from './transition/Transition';
 import { useNavigate } from 'react-router-dom';
-import IshanResume from "./Ishan.pdf";
+import IshanResume from "./ISHANARORA_CV.pdf;
 import SanyamResume from "./sanyam_main_resume.pdf";
 // gsap.registerPlugin(ScrollTrigger);
 

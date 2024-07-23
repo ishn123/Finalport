@@ -10,7 +10,7 @@ import { scrollAnimation } from '../components/Navbar';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/all';
 import "../components/styles/skill.css"
-import IshanResume from "../Ishan.pdf";
+import IshanResume from "../ISHANARORA_CV.pdf";
 import SanyamResume from "../sanyam_main_resume.pdf";
 import "./project.css"
 import SearchCards from '../components/SearchCards';

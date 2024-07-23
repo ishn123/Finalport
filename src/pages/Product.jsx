@@ -10,7 +10,7 @@ import { scrollAnimation } from '../components/Navbar';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/all';
 import "./product.css";
-import IshanResume from "../Ishan.pdf";
+import IshanResume from "../ISHANARORA_CV.pdf";
 import Sphere from "../Sphere.mp4";
 
 gsap.registerPlugin(ScrollTrigger);

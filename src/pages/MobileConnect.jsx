@@ -10,7 +10,7 @@ import { scrollAnimation } from '../components/Navbar';
 import { gsap } from 'gsap';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faGithub, faXTwitter, faLinkedinIn, faYoutube } from "@fortawesome/free-brands-svg-icons"
-import IshanResume from "../Ishan.pdf";
+import IshanResume from "../ISHANARORA_CV.pdf";
 import SanyamResume from "../sanyam_main_resume.pdf";
 import emailjs from "@emailjs/browser";
 import LazySpinnerLoader from '../LazyComponents/LazySpinnerLoader';

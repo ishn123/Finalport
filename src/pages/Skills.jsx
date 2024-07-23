@@ -13,7 +13,7 @@ import FrontendSkillsContainer from '../components/typeofskills/FrontendSkillsCo
 import BackendSkillsContainer from '../components/typeofskills/BackendSkillsContainer';
 import ProSkillsContainer from '../components/typeofskills/ProSkillsContainer';
 import "../components/styles/skill.css"
-import IshanResume from "../Ishan.pdf";
+import IshanResume from "../ISHANARORA_CV.pdf";
 import SanyamResume from "../sanyam_main_resume.pdf";
 // gsap.registerPlugin(ScrollTrigger);
 // let tl = gsap.timeline();

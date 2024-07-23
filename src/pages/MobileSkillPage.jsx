@@ -12,7 +12,7 @@ import { ScrollTrigger } from 'gsap/all';
 import FrontendSkillsContainer from '../components/typeofskills/FrontendSkillsContainer';
 import BackendSkillsContainer from '../components/typeofskills/BackendSkillsContainer';
 import ProSkillsContainer from '../components/typeofskills/ProSkillsContainer';
-import IshanResume from "../Ishan.pdf";
+import IshanResume from "../ISHANARORA_CV.pdf";
 import SanyamResume from "../sanyam_main_resume.pdf";
 import "../components/styles/skill.css"
 import LazySpinnerLoader from '../LazyComponents/LazySpinnerLoader';
