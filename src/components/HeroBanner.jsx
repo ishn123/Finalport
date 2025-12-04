@@ -11,7 +11,7 @@ function HeroBanner() {
                     <h1 class="boundingelem" id="secondh1">Developer</h1>
             </div>
             <div class="bounding">
-                <h5 class="boundingelem ip">Based in INDIA</h5>
+                <h5 class="boundingelem ip">Based in GERMANY</h5>
             </div>
         </div>
     </div>
