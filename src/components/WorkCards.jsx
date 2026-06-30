@@ -2,7 +2,7 @@ import React from 'react'
 import { useNavigate,createSearchParams } from "react-router-dom";
 import './Cards.css'
 
-const baseURI = encodeURI("https://cdn.sanity.io/images/mk7d8ghl/production/");
+const baseURI = encodeURI(`https://cdn.sanity.io/images/${import.meta.env.VITE_SANITY_PROJECT_ID}/production/`);
 
 function WorkCards({title,para,imageurl,cardText,backcolor,tags,desc,previewlink,sourcecodelink}) {
   const navigate = useNavigate();
@@ -15,12 +15,12 @@ function WorkCards({title,para,imageurl,cardText,backcolor,tags,desc,previewlink
   }
   return (
     <div>
-       <div class="card-container-product">
-        <div class="card">
+       <div className="card-container-product">
+        <div className="card">
           <h2>{title}</h2>
-          <i class="fas fa-arrow-right"></i>
+          <i className="fas fa-arrow-right"></i>
           <p>{para}</p>
-          <div class="pic" style={{backgroundImage:`url(${baseURI+imArr[1]+'-'+imArr[2]+"."+imArr.slice(-1)})`}}></div>
+          <div className="pic" style={{backgroundImage:`url(${baseURI+imArr[1]+'-'+imArr[2]+"."+imArr.slice(-1)})`}}></div>
           <ul>
             <li></li>
             <li></li>
@@ -52,12 +52,12 @@ function WorkCards({title,para,imageurl,cardText,backcolor,tags,desc,previewlink
           <button style={{backgroundColor:`${backcolor}`}} onClick={() => { navigateHandler(`/projectone?${createSearchParams(queryParams)}`) }}>
           </button>
         </div>
-          <div class="card card2">
-            <div class="card-text">{cardText}</div>
-            <div class="card-tags">
+          <div className="card card2">
+            <div className="card-text">{cardText}</div>
+            <div className="card-tags">
               {tags.map(item=>{
                 return (
-                  <div class="card-tag-text">{item.toUpperCase()}</div>
+                  <div className="card-tag-text">{item.toUpperCase()}</div>
                 )
               })}
              </div>

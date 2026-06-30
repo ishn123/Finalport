@@ -14,7 +14,6 @@ import BackendSkillsContainer from '../components/typeofskills/BackendSkillsCont
 import ProSkillsContainer from '../components/typeofskills/ProSkillsContainer';
 import "../components/styles/skill.css"
 import IshanResume from "../ISHANARORA_CV.pdf";
-import SanyamResume from "../sanyam_main_resume.pdf";
 // gsap.registerPlugin(ScrollTrigger);
 // let tl = gsap.timeline();
 // tl.to(".content-header-skill",{
@@ -304,7 +303,7 @@ function Skills() {
               <div className="last-section">
                 <div className='Sanyam'>
                   <source srcset="https://github.githubassets.com/images/modules/site/copilot/icon-diamond.webp" type="image/webp" />
-                  <img src="https://github.githubassets.com/images/modules/site/copilot/icon-diamond.png" alt="" className="build-in-scale-down" style={{ transitionDelay: "100ms" }} loading="lazy" decoding="async" width="100" height="100">
+                  <img src="https://github.githubassets.com/images/modules/site/copilot/icon-diamond.png" alt="GitHub Copilot" className="build-in-scale-down" style={{ transitionDelay: "100ms" }} loading="lazy" decoding="async" width="100" height="100">
                   </img>
                 </div>
                 <div className="extra-skills">
