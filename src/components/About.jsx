@@ -22,7 +22,7 @@ function About({ src1, src2 }) {
             <img src={src2} height={220} width={220} alt="Ishan Arora" />
             <div id="textabout">
               <h5>(ABout me)</h5>
-              <p>I'm a dynamic full stack developer with extensive open source contributions, including project maintenance at AlphaVio Org and top-tier input to the Mirage UI frontend component library. Beyond coding, I indulge my passion for gaming, travel, and cuisine. Seamlessly blending technical prowess with a creative mindset, I offer unique perspectives to projects. Let's collaborate and turn your ideas into captivating digital experiences. "In code, each line narrates a story, and every project is an epic." Together, we'll script greatness.</p>
+              <p>I'm a frontend-focused fullstack developer and Werkstudent at Mercedes-Benz, currently pursuing a Master's in Embedded Systems at the University of Siegen. I enjoy owning features end-to-end — from intuitive, responsive React interfaces to GraphQL and Node.js backends — and building internal tools in TypeScript. With experience across Mercedes-Benz, RoboRelax and EPAM, I care about clean, maintainable code and a great user experience. Let's collaborate and turn your ideas into polished digital products.</p>
               <a onClick={()=>showConnectBox()}>Let's talk</a>
             </div>
           </div>
@@ -35,7 +35,7 @@ function About({ src1, src2 }) {
             <img src={src2} alt="Ishan Arora" height={200} width={200}/>
             <div id="textabout">
               <h5>(ABout me)</h5>
-              <p>I'm a dynamic full stack developer with extensive open source contributions, including project maintenance at AlphaVio Org and top-tier input to the Mirage UI frontend component library. Beyond coding, I indulge my passion for gaming, travel, and cuisine. Seamlessly blending technical prowess with a creative mindset, I offer unique perspectives to projects. Let's collaborate and turn your ideas into captivating digital experiences. "In code, each line narrates a story, and every project is an epic." Together, we'll script greatness.</p>
+              <p>I'm a frontend-focused fullstack developer and Werkstudent at Mercedes-Benz, currently pursuing a Master's in Embedded Systems at the University of Siegen. I enjoy owning features end-to-end — from intuitive, responsive React interfaces to GraphQL and Node.js backends — and building internal tools in TypeScript. With experience across Mercedes-Benz, RoboRelax and EPAM, I care about clean, maintainable code and a great user experience. Let's collaborate and turn your ideas into polished digital products.</p>
            <a onClick={()=>showConnectBox()} style={{padding:2,marginBottom:2}}>Let's talk</a>
             </div>
           </div>
