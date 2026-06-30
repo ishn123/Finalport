@@ -51,63 +51,83 @@ function Exper() {
                 <div className="CV-grid-column">
                   <div className="CV-jobs">
                     <section className="CV-timeline CV-job">
-                      <h3 className="CV-timeline-heading"><span className="CV-timeline-heading-title">Full Stack Developer </span>&#8211; <span className="CV-timeline-heading-location">Mercedes Benz Research Development India </span><small className="CV-timeline-heading-duration">April 2023 - Present</small></h3>
+                      <h3 className="CV-timeline-heading"><span className="CV-timeline-heading-title">Werkstudent &ndash; Software Developer </span>&#8211; <span className="CV-timeline-heading-location">Mercedes-Benz, Germany </span><small className="CV-timeline-heading-duration">2025 - Present</small></h3>
                       <ul className="CV-timeline-details">
                         <Fade cascade damping={0.1} triggerOnce>
-                          <li className="CV-job-timeline-item">Developed responsive and user-friendly web interfaces using modern web technologies such as HTML5, CSS3, and JavaScript, enhancing user experience and engagement.</li>
-                          <li className="CV-job-timeline-item">Tested front-end code in multiple browsers to ensure cross-browser compatability.</li>
-                          <li className="CV-job-timeline-item">Coordinated closely with other developers and digital producers to expedite projects.</li>
-                          <li className="CV-job-timeline-item">Utilized front-end frameworks such as React to create interactive and dynamic user interfaces that align with industry best practices.</li>
+                          <li className="CV-job-timeline-item">Develop internal process-automation tools in TypeScript with GraphQL APIs, owning features end-to-end.</li>
+                          <li className="CV-job-timeline-item">Model and implement business processes (BPMN) and integrate them into developer-facing tooling.</li>
+                          <li className="CV-job-timeline-item">Containerise services with Docker and maintain CI/CD pipelines for reliable, automated deployments.</li>
+                          <li className="CV-job-timeline-item">Collaborate within an agile team to ship and iterate on internal developer tools.</li>
+
+                          <Stack direction="row" spacing={1} className='fle'>
+                            <Chip label="TypeScript" sx={{ bgcolor: '#ccc7c7;', color: 'black' }} />
+                            <Chip label="GraphQL" sx={{ bgcolor: '#ccc7c7;', color: 'black' }} />
+                            <Chip label="BPMN" sx={{ bgcolor: '#ccc7c7;', color: 'black' }} />
+                            <Chip label="Docker" sx={{ bgcolor: '#ccc7c7;', color: 'black' }} />
+                            <Chip label="CI/CD" sx={{ bgcolor: '#ccc7c7;', color: 'black' }} />
+                            <Chip label="Node.js" sx={{ bgcolor: '#ccc7c7;', color: 'black' }} />
+                          </Stack>
+
+                        </Fade>
+                      </ul>
+                    </section>
+                    <section className="CV-timeline CV-job">
+                      <h3 className="CV-timeline-heading"><span className="CV-timeline-heading-title">Working Student &ndash; Fullstack Developer </span>&#8211; <span className="CV-timeline-heading-location">RoboRelax, Germany </span><small className="CV-timeline-heading-duration">Oct 2024 - 2025</small></h3>
+                      <ul className="CV-timeline-details">
+                        <Fade cascade damping={0.1} triggerOnce>
+                          <li className="CV-job-timeline-item">Built and shipped features in React and Redux, owning UI components and state management end-to-end.</li>
+                          <li className="CV-job-timeline-item">Implemented a full booking system (appointments &amp; availability) with a React frontend and a Java/GraphQL backend.</li>
+                          <li className="CV-job-timeline-item">Built Spring Boot services and performant GraphQL APIs, reducing client-side over-fetching.</li>
+                          <li className="CV-job-timeline-item">Collaborated with product and design in an Agile/Scrum team to deliver user-facing features.</li>
 
                           <Stack direction="row" spacing={1} className='fle'>
                             <Chip label="React" sx={{ bgcolor: '#ccc7c7;', color: 'black' }} />
-                            <Chip label="Vue" sx={{ bgcolor: '#ccc7c7;', color: 'black' }} />
-                            <Chip label="ChaiScript" sx={{ bgcolor: '#ccc7c7;', color: 'black' }} />
-                            <Chip label="NodeJS" sx={{ bgcolor: '#ccc7c7;', color: 'black' }} />
+                            <Chip label="Redux" sx={{ bgcolor: '#ccc7c7;', color: 'black' }} />
+                            <Chip label="GraphQL" sx={{ bgcolor: '#ccc7c7;', color: 'black' }} />
+                            <Chip label="Spring Boot" sx={{ bgcolor: '#ccc7c7;', color: 'black' }} />
+                            <Chip label="Java" sx={{ bgcolor: '#ccc7c7;', color: 'black' }} />
+                            <Chip label="REST" sx={{ bgcolor: '#ccc7c7;', color: 'black' }} />
+                          </Stack>
+
+                        </Fade>
+                      </ul>
+                    </section>
+                    <section className="CV-timeline CV-job">
+                      <h3 className="CV-timeline-heading"><span className="CV-timeline-heading-title">Technical Consultant </span>&#8211; <span className="CV-timeline-heading-location">Mercedes-Benz R&amp;D, India </span><small className="CV-timeline-heading-duration">Apr 2023 - Sep 2024</small></h3>
+                      <ul className="CV-timeline-details">
+                        <Fade cascade damping={0.1} triggerOnce>
+                          <li className="CV-job-timeline-item">Owned backend workflows end-to-end on an internal engineering platform (SBM, C++ scripting), from requirements to deployment.</li>
+                          <li className="CV-job-timeline-item">Designed secure microservice communication using gRPC and Kafka.</li>
+                          <li className="CV-job-timeline-item">Automated a REST API integration, removing manual steps and improving data availability for downstream teams.</li>
+
+                          <Stack direction="row" spacing={1} className='fle'>
                             <Chip label="SBM" sx={{ bgcolor: '#ccc7c7;', color: 'black' }} />
-                            <Chip label="Docker" sx={{ bgcolor: '#ccc7c7;', color: 'black' }} />
+                            <Chip label="C++" sx={{ bgcolor: '#ccc7c7;', color: 'black' }} />
+                            <Chip label="gRPC" sx={{ bgcolor: '#ccc7c7;', color: 'black' }} />
+                            <Chip label="Kafka" sx={{ bgcolor: '#ccc7c7;', color: 'black' }} />
+                            <Chip label="REST" sx={{ bgcolor: '#ccc7c7;', color: 'black' }} />
+                            <Chip label="Microservices" sx={{ bgcolor: '#ccc7c7;', color: 'black' }} />
                           </Stack>
 
                         </Fade>
                       </ul>
                     </section>
                     <section className="CV-timeline CV-job">
-                      <h3 className="CV-timeline-heading"><span className="CV-timeline-heading-title">Junior Software Engineer </span>&#8211; <span className="CV-timeline-heading-location">Epam Systems</span><small className="CV-timeline-heading-duration">Feb 2022 - April 2023</small></h3>
+                      <h3 className="CV-timeline-heading"><span className="CV-timeline-heading-title">Software Engineer </span>&#8211; <span className="CV-timeline-heading-location">EPAM Systems, India </span><small className="CV-timeline-heading-duration">Feb 2022 - Mar 2023</small></h3>
                       <ul className="CV-timeline-details">
                         <Fade cascade damping={0.1} triggerOnce>
-                          <li className="CV-job-timeline-item">Developed a REST API for a web application using Node JS that enabled third-party integration.</li>
-                          <li className="CV-job-timeline-item">Utilized critical design patterns such as Adapter, Factory to assist with projects.</li>
-                          <li className="CV-job-timeline-item">Leveraged Node JS and Python Fast API to create robust server-side components that optimized data processing and ensured data integrity.</li>
-                          <li className="CV-job-timeline-item">Clients included Digital Bank of Singapore</li>
+                          <li className="CV-job-timeline-item">Built automated web and mobile UI test suites (Selenium, Appium) for DBS Bank, owning release quality.</li>
+                          <li className="CV-job-timeline-item">Built a Behaviour-Driven Development framework for mobile and internet banking, fully integrated into the CI/CD pipeline.</li>
+                          <li className="CV-job-timeline-item">Partnered with client product and engineering teams to define test strategy and shorten release cycles.</li>
+
 
                           <Stack direction="row" spacing={1} className='fle'>
-                            <Chip label="Python3" sx={{ bgcolor: '#ccc7c7;', color: 'black' }} />
-                            <Chip label="Java8" sx={{ bgcolor: '#ccc7c7;', color: 'black' }} />
                             <Chip label="Selenium" sx={{ bgcolor: '#ccc7c7;', color: 'black' }} />
-                            <Chip label="Cucumber" sx={{ bgcolor: '#ccc7c7;', color: 'black' }} />
-                            <Chip label="Jenkins" sx={{ bgcolor: '#ccc7c7;', color: 'black' }} />
-                            <Chip label="FastAPI" sx={{ bgcolor: '#ccc7c7;', color: 'black' }} />
-                          </Stack>
-
-                        </Fade>
-                      </ul>
-                    </section>
-                    <section className="CV-timeline CV-job">
-                      <h3 className="CV-timeline-heading"><span className="CV-timeline-heading-title">Test Automation Engineer</span>&#8211; <span className="CV-timeline-heading-location">Digital Bank of Singapore</span><small className="CV-timeline-heading-duration">July 2022 - April 2023</small></h3>
-                      <ul className="CV-timeline-details">
-                        <Fade cascade damping={0.1} triggerOnce>
-                          <li className="CV-job-timeline-item">Developed an automated system for collecting and analyzing test results, providing detailed reports for stakeholders</li>
-                          <li className="CV-job-timeline-item">Developed a fully automated Behaviour Driven Development Framework to test Mobile and Internet Banking application with complete Integration of CI/CD pipeline.</li>
-                          <li className="CV-job-timeline-item">Utilized the User Driven Development using JBehave</li>
-
-
-                          <Stack direction="row" spacing={1} className='fle'>
-                            <Chip label="JBehave" sx={{ bgcolor: '#ccc7c7;', color: 'black' }} />
                             <Chip label="Appium" sx={{ bgcolor: '#ccc7c7;', color: 'black' }} />
-                            <Chip label="Mobile Testing" sx={{ bgcolor: '#ccc7c7;', color: 'black' }} />
-                            <Chip label="Web Scraping" sx={{ bgcolor: '#ccc7c7;', color: 'black' }} />
-                            <Chip label="Java8" sx={{ bgcolor: '#ccc7c7;', color: 'black' }} />
-                            <Chip label="MariaDB" sx={{ bgcolor: '#ccc7c7;', color: 'black' }} />
+                            <Chip label="Java" sx={{ bgcolor: '#ccc7c7;', color: 'black' }} />
+                            <Chip label="Jenkins" sx={{ bgcolor: '#ccc7c7;', color: 'black' }} />
+                            <Chip label="CI/CD" sx={{ bgcolor: '#ccc7c7;', color: 'black' }} />
+                            <Chip label="Test Automation" sx={{ bgcolor: '#ccc7c7;', color: 'black' }} />
                           </Stack>
 
                         </Fade>
