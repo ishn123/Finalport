@@ -3,15 +3,15 @@ import React from 'react'
 function HeroBanner() {
   return (
     <div id="heading">
-        <div class="bounding">
-            <h1 class="boundingelem mob">FullStack</h1>
+        <div className="bounding">
+            <h1 className="boundingelem mob">FullStack</h1>
         </div>
-        <div class="blocktext">
-            <div class="bounding">
-                    <h1 class="boundingelem" id="secondh1">Developer</h1>
+        <div className="blocktext">
+            <div className="bounding">
+                    <h1 className="boundingelem" id="secondh1">Developer</h1>
             </div>
-            <div class="bounding">
-                <h5 class="boundingelem ip">Based in GERMANY</h5>
+            <div className="bounding">
+                <h5 className="boundingelem ip">Based in GERMANY</h5>
             </div>
         </div>
     </div>

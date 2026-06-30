@@ -122,7 +122,7 @@ function SearchCards({ chunckSize }) {
       <Searchcontainer chunckSize={chunckSize} idx={currPage} setPage={setPage} setData={setData}></Searchcontainer>
       <div className="projects-card-container">
         <div className="skill-card-show">
-          <div class="container" {...handlers}>
+          <div className="container" {...handlers}>
             {
               currData?.length != 0 ?
                 (
@@ -163,7 +163,7 @@ function SearchCards({ chunckSize }) {
       </div>
       <div className="pagination-content" style={{ flexDirection: "row", justifyContent: "center" }}>
         {currPage != 0 && data.length > 1 && <FontAwesomeIcon icon={faArrowCircleLeft} color="white" onClick={()=>navigateNext(currPage-1)}></FontAwesomeIcon>}
-        <ul class="pagination-ul">
+        <ul className="pagination-ul">
           {
             (
               Array.from({ length: Math.ceil(size / chunckSize) }, () => Math.random()).map((ele, idx) => {

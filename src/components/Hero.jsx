@@ -112,11 +112,11 @@ function Hero() {
       <div id="hero">
         <HeroBanner></HeroBanner>
         {/* <div id="chhotiheadings">
-          <div class="bounding">
-            <h5 class="boundingelem moi">available for freelance</h5>
+          <div className="bounding">
+            <h5 className="boundingelem moi">available for freelance</h5>
           </div>
-          <div class="bounding">
-            <h5 class="boundingelem moi oo">work for web</h5>
+          <div className="bounding">
+            <h5 className="boundingelem moi oo">work for web</h5>
           </div>
         </div> */}
         <Clients></Clients>
@@ -124,28 +124,28 @@ function Hero() {
           <a className='js-work-link op' onClick={()=>navigateHandler('/skills')}>Working on Web <FiArrowUpRight className='arr'></FiArrowUpRight><span className='underline'></span></a>
           <a className='js-work-link op' onClick={()=>navigateHandler('/projects')}>Developing Projects<FiArrowUpRight className='arr'></FiArrowUpRight><span className='underline'></span></a>
           <div id="iconset">
-            <div class="circle"> <IoArrowDownSharp></IoArrowDownSharp> </div>
-            <div class="circle"> <IoArrowDownSharp></IoArrowDownSharp> </div>
+            <div className="circle"> <IoArrowDownSharp></IoArrowDownSharp> </div>
+            <div className="circle"> <IoArrowDownSharp></IoArrowDownSharp> </div>
           </div>
         </div>
       </div>
       <div id="second">
-        <div class="elem" onClick={()=>navigateHandler('/skills')}>
+        <div className="elem" onClick={()=>navigateHandler('/skills')}>
           <h1>SKILLS</h1>
           <h2>+</h2>
-          <div class="center14"></div>
+          <div className="center14"></div>
         </div>
 
 
-        <div class="elem" onClick={()=>navigateHandler('/experience')}>
+        <div className="elem" onClick={()=>navigateHandler('/experience')}>
           <h1>EXPERIENCE</h1>
           <h2>+</h2>
-          <div class="center14"></div>
+          <div className="center14"></div>
         </div>
-        <div class="elem elemlast" onClick={()=>navigateHandler('/projects')}>
+        <div className="elem elemlast" onClick={()=>navigateHandler('/projects')}>
           <h1>WORK</h1>
           <h2>+</h2>
-          <div class="center14"></div>
+          <div className="center14"></div>
         </div>
 
       </div>

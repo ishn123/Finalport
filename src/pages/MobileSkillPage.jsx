@@ -13,7 +13,6 @@ import FrontendSkillsContainer from '../components/typeofskills/FrontendSkillsCo
 import BackendSkillsContainer from '../components/typeofskills/BackendSkillsContainer';
 import ProSkillsContainer from '../components/typeofskills/ProSkillsContainer';
 import IshanResume from "../ISHANARORA_CV.pdf";
-import SanyamResume from "../sanyam_main_resume.pdf";
 import "../components/styles/skill.css"
 import LazySpinnerLoader from '../LazyComponents/LazySpinnerLoader';
 const V1 = lazy(() => import("../components/Video1"));
@@ -313,7 +312,7 @@ function MobileSkillPage() {
               <div className="last-section">
                 <div className='Sanyam'>
                   <source srcset="https://github.githubassets.com/images/modules/site/copilot/icon-diamond.webp" type="image/webp" />
-                  <img src="https://github.githubassets.com/images/modules/site/copilot/icon-diamond.png" alt="" className="build-in-scale-down" style={{ transitionDelay: "10ms" }} loading="lazy" decoding="async" width="100" height="100">
+                  <img src="https://github.githubassets.com/images/modules/site/copilot/icon-diamond.png" alt="GitHub Copilot" className="build-in-scale-down" style={{ transitionDelay: "10ms" }} loading="lazy" decoding="async" width="100" height="100">
                   </img>
                 </div>
                 <div className="extra-skills">

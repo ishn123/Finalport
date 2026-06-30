@@ -5,7 +5,7 @@ import { createAction, createAsyncThunk, createSlice } from "@reduxjs/toolkit";
 export const countData = createAsyncThunk("preloader/countData",    
     async (_,thunkAPI)=>{
        
-        const data = await fetch(`https://mk7d8ghl.api.sanity.io/v2023-10-14/data/query/production?query=${_}`)
+        const data = await fetch(`https://${import.meta.env.VITE_SANITY_PROJECT_ID}.api.sanity.io/v2023-10-14/data/query/production?query=${_}`)
                             .then(res=>res.json());
         return data;
     }
@@ -14,7 +14,7 @@ export const fetchQueryBased = createAsyncThunk("preloader/queryBased",
 
     async(_,thunkAPI)=>{
     
-        let data = await fetch(`https://mk7d8ghl.api.sanity.io/v2023-10-14/data/query/production?query=${_}`)
+        let data = await fetch(`https://${import.meta.env.VITE_SANITY_PROJECT_ID}.api.sanity.io/v2023-10-14/data/query/production?query=${_}`)
                      .then(res=>res.json());
 
         return data;
@@ -25,7 +25,7 @@ export const filterByTags = createAsyncThunk("preloader/filterTags",
     async(_,thunkAPI)=>{
         
         
-        const data = await fetch(`https://mk7d8ghl.api.sanity.io/v2023-10-14/data/query/production?query=${_.nquery}`)
+        const data = await fetch(`https://${import.meta.env.VITE_SANITY_PROJECT_ID}.api.sanity.io/v2023-10-14/data/query/production?query=${_.nquery}`)
                             .then((res)=>res.json());
 
         
@@ -38,11 +38,10 @@ export const fetchDataStrapi = createAsyncThunk("preloader/getData",
 
     async (_, thunkAPI) => {
         
-        let data = await fetch(`https://mk7d8ghl.api.sanity.io/v2023-10-14/data/query/production?query=*[_type=='Projects']{previewlink,Description,Title,sourcecodelink,Tags,buttoncolor,imageUrl,shortdesc,para}`)
+        let data = await fetch(`https://${import.meta.env.VITE_SANITY_PROJECT_ID}.api.sanity.io/v2023-10-14/data/query/production?query=*[_type=='Projects']{previewlink,Description,Title,sourcecodelink,Tags,buttoncolor,imageUrl,shortdesc,para}`)
                         .then(res=>res.json());
         
         
-                        console.log(data);
         return data;
     }
 )

@@ -12,11 +12,9 @@ function Connect() {
   const sendEmail = (event) => {
 
     event.preventDefault();
-    const serviceID = 'service_p4gz26b';
-    // const serviceID = 'service_spc9wbe';
-    const templateID = 'template_108xj5u';
-    // const templateID = 'template_zg2hxd6';
-    emailjs.sendForm(serviceID, templateID, emailBtn.current, "f3nSYP6GeF8JLWMil")
+    const serviceID = import.meta.env.VITE_EMAILJS_SERVICE_ID;
+    const templateID = import.meta.env.VITE_EMAILJS_TEMPLATE_ID;
+    emailjs.sendForm(serviceID, templateID, emailBtn.current, import.meta.env.VITE_EMAILJS_PUBLIC_KEY)
       .then(() => {
         setOnSuccess("Sent");
         setemail("");
@@ -24,9 +22,8 @@ function Connect() {
       }, (err) => {
         setOnSuccess("Failed!")
       });
-    emailjs.sendForm(serviceID, "template_4gkennh", emailBtn.current, "f3nSYP6GeF8JLWMil")
+    emailjs.sendForm(serviceID, import.meta.env.VITE_EMAILJS_TEMPLATE_ID_2, emailBtn.current, import.meta.env.VITE_EMAILJS_PUBLIC_KEY)
       .then(() => {
-        console.log("done")
       }, (err) => {
       });
   }
@@ -194,11 +191,11 @@ function Connect() {
         </div>
 
         <div className="send-message-button-wrapper">
-          <button class="button">
-            <span class="default">Send</span>
-            <span class="success">{onSuccess}</span>
-            <div class="left"></div>
-            <div class="right"></div>
+          <button className="button">
+            <span className="default">Send</span>
+            <span className="success">{onSuccess}</span>
+            <div className="left"></div>
+            <div className="right"></div>
           </button>
         </div>
 
@@ -207,7 +204,7 @@ function Connect() {
       <div className="separation-line"></div>
       <div className="subscribe-content" style={{ marginTop: "15px" }}>
         <div className="button-subscribe-connect">
-          <a class="bmc-button" target="_blank" href="https://www.buymeacoffee.com/aroraishan">
+          <a className="bmc-button" target="_blank" href="https://www.buymeacoffee.com/aroraishan">
             <img src="https://www.buymeacoffee.com/assets/img/BMC-btn-logo.svg" alt="Buy me a coffee" />
             <span style={{ marginLeft: 5 }}>Buy me a coffee</span>
           </a>

@@ -234,7 +234,6 @@ function Product() {
             <a href={IshanResume} target="_blank">I</a>
           </div>
           {/* <div className="side-lancer-2" onClick={(event)=>event.stopPropagation()}>
-                <a href={SanyamResume} target="_blank">S</a>
               </div> */}
           <div id="resume" onClick={(event) => showResumeAnimation(event)}>Resume</div>
         </div>
@@ -247,7 +246,7 @@ function Product() {
           </div>
           <div className="project-container">
             <div className="gif-container">
-              <img src={data?.get("url")} alt="" />
+              <img src={data?.get("url")} alt="Project preview" />
             </div>
             <div className="description-container">
               <div className="paragraph">{data?.get("para")}</div>

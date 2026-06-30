@@ -22,6 +22,5 @@ export default defineConfig({
   },
   define: {
     'process.env': {}
-  },
-  server:true
+  }
 })

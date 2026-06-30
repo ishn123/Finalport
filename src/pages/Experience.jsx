@@ -15,7 +15,6 @@ import ProSkillsContainer from '../components/typeofskills/ProSkillsContainer';
 import Exper from "../components/exp";
 import "../components/styles/skill.css"
 import IshanResume from "../ISHANARORA_CV.pdf";
-import SanyamResume from "../sanyam_main_resume.pdf";
 // gsap.registerPlugin(ScrollTrigger);
 // let tl = gsap.timeline();
 // tl.to(".content-header-skill",{

@@ -9,7 +9,6 @@ import Footer from './components/Footer';
 import Transition from './transition/Transition';
 import { useNavigate } from 'react-router-dom';
 import IshanResume from "./ISHANARORA_CV.pdf";
-import SanyamResume from "./sanyam_main_resume.pdf";
 // gsap.registerPlugin(ScrollTrigger);
 
 
@@ -46,7 +45,8 @@ function App({ mobileMenu, setMobileMenu, dateState, setDateState }) {
     };
   }, []);
   useEffect(() => {
-    setInterval(() => setDateState(new Date()), 30000);
+    const timerId = setInterval(() => setDateState(new Date()), 30000);
+    return () => clearInterval(timerId);
   }, []);
 
 
@@ -147,7 +147,6 @@ function App({ mobileMenu, setMobileMenu, dateState, setDateState }) {
                 <a href={IshanResume} target="_blank">I</a>
               </div>
               {/* <div className="side-lancer-2" onClick={(event)=>event.stopPropagation()}>
-                <a href={SanyamResume} target="_blank">S</a>
               </div> */}
               <div id="resume" onClick={(event) => showResumeAnimation(event)}>Resume</div>
             </div>

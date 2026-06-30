@@ -11,7 +11,6 @@ import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/all';
 import "../components/styles/skill.css"
 import IshanResume from "../ISHANARORA_CV.pdf";
-import SanyamResume from "../sanyam_main_resume.pdf";
 import "./project.css"
 import SearchCards from '../components/SearchCards';
 import p1 from "../v1.webm";
@@ -351,7 +350,7 @@ function Projects() {
 
           <div className="dabba">
             <div className="dabba-wrapper">
-              <div class="panel red">
+              <div className="panel red">
                 <div className="w1-v1">
                   <video src={p1} muted loop autoPlay className='v1-work'></video>
                 </div>
@@ -362,12 +361,12 @@ function Projects() {
                   <video src={p2} muted loop autoPlay className='v1-work'></video>
                 </div>
               </div>
-              <div class="panel purple">
+              <div className="panel purple">
                 <div className="w1-v1">
                   <video src={p3} muted loop autoPlay className='v1-work'></video>
                 </div>
               </div>
-              <div class="panel yello">
+              <div className="panel yello">
                 <div className="w1-v1">
                   <video src={p4} muted loop autoPlay className='v1-work'></video>
                 </div>

@@ -6,12 +6,12 @@ function NoRecord({record,setRecord}) {
     
     return (
         <>
-            <div class="empty-state">
-                <div class="empty-state__content">
-                    <div class="empty-state__icon">
-                        <img src="https://res.cloudinary.com/dzmf1giby/image/upload/v1697006679/emptybox_ujwaob.png" alt="" />
+            <div className="empty-state">
+                <div className="empty-state__content">
+                    <div className="empty-state__icon">
+                        <img src="https://res.cloudinary.com/dzmf1giby/image/upload/v1697006679/emptybox_ujwaob.png" alt="No records found" />
                     </div>
-                    <div class="empty-state__message">No Entries yet.</div>
+                    <div className="empty-state__message">No Entries yet.</div>
                 </div>
             </div>
         </>
